@@ -1,4 +1,4 @@
-# react-smart-hooks
+# react-intelligent-hooks
 
 A collection of production-ready, reusable React custom hooks to simplify your codebase and eliminate duplicate logic. Use these hooks to speed up development and keep your components clean and maintainable.
 
@@ -19,13 +19,13 @@ A collection of production-ready, reusable React custom hooks to simplify your c
 Install via npm:
 
 ```bash
-npm install react-smart-hooks
+npm install react-intelligent-hooks
 ```
 
 Or with yarn:
 
 ```bash
-yarn add react-smart-hooks
+yarn add react-intelligent-hooks
 ```
 
 ---
@@ -41,7 +41,7 @@ import {
   useLocalStorage,
   usePrevious,
   useOnClickOutside,
-} from "react-smart-hooks";
+} from "react-intelligent-hooks";
 ```
 
 ---
@@ -53,7 +53,7 @@ import {
 A simple hook to manage boolean state with a toggle function.
 
 ```jsx
-import { useToggle } from "react-smart-hooks";
+import { useToggle } from "react-intelligent-hooks";
 
 function ToggleExample() {
   const [isOpen, toggle, setIsOpen] = useToggle(false);
@@ -75,7 +75,7 @@ function ToggleExample() {
 Debounce a value by a specified delay (ms). Useful for search inputs, etc.
 
 ```jsx
-import { useDebounce } from "react-smart-hooks";
+import { useDebounce } from "react-intelligent-hooks";
 
 function SearchComponent() {
   const [query, setQuery] = React.useState("");
@@ -102,7 +102,7 @@ function SearchComponent() {
 Persist state to localStorage with a simple API.
 
 ```jsx
-import { useLocalStorage } from "react-smart-hooks";
+import { useLocalStorage } from "react-intelligent-hooks";
 
 function Counter() {
   const [count, setCount] = useLocalStorage("count", 0);
@@ -117,7 +117,7 @@ function Counter() {
 Get the previous value of a variable.
 
 ```jsx
-import { usePrevious } from "react-smart-hooks";
+import { usePrevious } from "react-intelligent-hooks";
 
 function ValueTracker({ value }) {
   const prevValue = usePrevious(value);
@@ -137,7 +137,7 @@ function ValueTracker({ value }) {
 Detect clicks outside a referenced element.
 
 ```jsx
-import { useOnClickOutside } from "react-smart-hooks";
+import { useOnClickOutside } from "react-intelligent-hooks";
 
 function Dropdown({ onClose }) {
   const ref = React.useRef();

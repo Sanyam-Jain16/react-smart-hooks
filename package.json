@@ -1,7 +1,6 @@
 {
-  "name": "react-smart-hooks",
-  "private": true,
-  "version": "0.1.0",
+  "name": "react-intelligent-hooks",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
