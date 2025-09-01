@@ -8,8 +8,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "ReactHooksLib",
-      fileName: (format) => `react-hooks-lib.${format}.js`,
+      name: "ReactIntelligentHooks",
+      fileName: (format) => `index.${format}.js`,
+      formats: ["es", "cjs"], // supports ESM & CommonJS
     },
     rollupOptions: {
       external: ["react", "react-dom"],
@@ -20,6 +21,7 @@ export default defineConfig({
         },
       },
     },
+    outDir: "dist",
   },
   test: {
     globals: true,
